@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="marketing,digital,agência,automação de marketing">
-    <meta name="author" content="Danki Code">
-    <title>Agência de Marketing | Florianópolis</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="menu-topo">
-                <div class="logo"></div>
-                <nav class="desktop">
-                    <ul>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li class="btn-nav"><a href="">Quero um orçamento</a></li>
-                    </ul>
-                </nav><!--desktop-->
-                <div class="clear"></div>
-            </div><!--menu-topo-->
-            <div class="chamada-header">
-                <h2>Você vendendo mais <br> com automação web.</h2>
-                <p>Id aliquip amet ex aute pariatur adipisicing quis nulla reprehenderit esse sse anim dolore est incididunt duis ea</p>
-                <form>
-                    <input type="email" placeholder="Seu email..." required>
-                    <input type="submit" value="Quero saber mais">
-                </form>
-            </div>
-        </div><!--container--> 
-    </header>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="marketing,digital,agência,automação de marketing">
+        <meta name="author" content="Danki Code">
+        <title>Agência de Marketing | Florianópolis</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="menu-topo">
+                    <div class="logo"></div>
+                    <nav class="desktop">
+                        <ul>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Serviços</a></li>
+                            <li><a href="">Contato</a></li>
+                            <li class="btn-nav"><a href="">Quero um orçamento</a></li>
+                        </ul>
+                    </nav><!--desktop-->
+                    <nav class="mobile">
+                        <h3><i class="fas fa-bars"></i></h3>
+                        <ul>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Serviços</a></li>
+                            <li><a href="">Contato</a></li>
+                            <li class="btn-nav"><a href="">Quero um orçamento</a></li>
+                        </ul>
+                    </nav><!--mobile-->
+                    <div class="clear"></div>
+                </div><!--menu-topo-->
+                <div class="chamada-header">
+                    <h2>Você vendendo mais <br> com automação web.</h2>
+                    <p>Id aliquip amet ex aute pariatur adipisicing quis nulla reprehenderit esse sse anim dolore est incididunt duis ea</p>
+                    <form>
+                        <input type="email" placeholder="Seu email..." required>
+                        <input type="submit" value="Quero saber mais">
+                    </form>
+                </div>
+            </div><!--container--> 
+        </header>
+
+        <section class="descricao-danki">
+            <div class="container">
+                <p>Tempor eu tempor id ut do officia culpa laborum.
+                    Minim nostrud eu id officia culpa <b>consectetur</b> laborum sint.
+                    Eiusmod nulla magna quis do esse adipisicing adipisicing esse.
+                    Sit nulla aute proident sint aute pariatur.</p>
+            </div><!--container-->
+        </section>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/all.min.js"></script>
+        <script>
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        </script>
+    </body>
 </html>

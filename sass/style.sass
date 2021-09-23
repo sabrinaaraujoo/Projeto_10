@@ -15,7 +15,7 @@
 // Header do meu site
 header
     background-image: url('../images/bg.jpg')
-    min-height: 600px
+    min-height: 450px
     padding: 30px 0
     background-size: cover
     background-position: center
@@ -23,9 +23,17 @@ header
 .logo 
     background-image: url('../images/logo.png')
     background-size: 100% 100%
+    position: relative
+    z-index: 1
     float: left
     width: 132px
     height: 20px
+
+
+li.btn-nav
+    padding: 3px 8px
+    border-radius: 20px
+    border: 1px solid white
 
 nav.desktop
     float: right
@@ -38,10 +46,36 @@ nav.desktop
     a
         text-decoration: none
         color: white
+
+nav.mobile
+    display: none
+    float: right
+
+    h3
+        z-index: 1
+        color: white
+        cursor: pointer
+        font-size: 30px
+        position: relative
+
+    ul
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        padding: 70px 0 30px 0
+        display: none
+        background: #31475e
+        text-align: center
+    li
+        padding: 10px 0
     li.btn-nav
-        padding: 3px 8px
-        border-radius: 20px
-        border: 1px solid white
+        display: inline-block
+        padding: 4px 10px
+    a
+        display: block
+        color: white
+        text-decoration: none    
 
 div
     .chamada-header
@@ -50,17 +84,14 @@ div
             font-size: 47px
             color: white
             font-weight: normal
-
         p
             font-size: 17px
             color: white
             font-weight: normal
             margin-top: 10px
             max-width: 600px
-
         form
             margin-top: 10px
-
         input[type=email]
             display: inline-block
             border-radius: 100px
@@ -69,10 +100,8 @@ div
             height: 40px
             border: 0
             padding-left: 10px
-
-        input[type=email]:focus
-            outline: 0
-            
+            &:focus
+                outline: 0
         input[type=submit]
             width: 181px
             height: 43px
@@ -82,3 +111,28 @@ div
             cursor: pointerr
             border-radius: 100px
             background-color: #ff5f27
+
+section.descricao-danki
+        text-align: center
+        padding: 30px 0
+        p
+            display: inline-block
+            max-width: 680px
+            font-weight: lighter
+            font-size: 22px
+            font-style: italic
+
+@media screen and ( max-width: 1024px )
+        nav.desktop
+            display: none
+
+        nav.mobile
+            display: block
+
+        div
+            .chamada-header
+                text-align: center
+                p
+                    display: inline-block
+                input[type=email]
+                    margin-bottom: 10px
