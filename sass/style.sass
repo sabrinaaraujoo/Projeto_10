@@ -1,3 +1,5 @@
+$color1: #31475e
+    
 *
     margin: 0
     padding: 0
@@ -132,7 +134,7 @@ section.descricao-danki2
         float: left
         width: 55%
         h3
-            color: #31475e
+            color: $color1
             font-size: 22px
             line-height: 32px
             font-weight: normal
@@ -146,8 +148,27 @@ section.descricao-danki2
         width: 45%
         max-width: 500px
 
-
-
+section.descricao-danki3
+    padding: 30px 0 60px 0
+    .container
+        max-width: 960px
+        background-image: url('../images/bg2.jpg')
+        background-size: cover
+        min-height: 350px
+        position: relative
+    .box-depoimento
+        position: absolute
+        left: 50%
+        bottom: -30px
+        width: 60%
+        max-width: 506px
+        background: white
+        padding: 10px 30px
+        box-shadow: 0 8px 20px 0 rgba(224,224 ,224 ,0.5)
+        p
+            font-size: 18px
+            color: $color1
+            font-weight: lighter
 
 @media screen and ( max-width: 1024px )
         nav.desktop
@@ -163,7 +184,15 @@ section.descricao-danki2
                     display: inline-block
                 input[type=email]
                     margin-bottom: 10px
-                    
+
+        .box-depoimento
+            position: absolute
+            left: 50%
+            top: 50%
+            bottom: auto
+            transform: translate(-50%,-50%)
+            width: 80%
+               
 @media screen and ( max-width:768px )
     section.descricao-danki2
         .texto-descricao
