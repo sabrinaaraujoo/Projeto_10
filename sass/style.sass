@@ -1,10 +1,15 @@
 $color1: #31475e
+$colorparagrafo: #6a7c92
     
 *
     margin: 0
     padding: 0
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
+
+body
+    overflow-x: hidden
+    background-color: rgb(230, 230, 230)
 
 .container
     max-width: 1280px
@@ -139,7 +144,7 @@ section.descricao-danki2
             line-height: 32px
             font-weight: normal
         p
-            color: #6a7c92
+            color: $colorparagrafo
             font-size: 15px
             line-height: 25px
             margin-top: 25px
@@ -169,6 +174,48 @@ section.descricao-danki3
             font-size: 18px
             color: $color1
             font-weight: lighter
+
+section.servicos
+    padding: 25px 0
+    .container
+        max-width: 1100px
+    .title-servicos
+        text-align: center
+        h3
+            color: $color1
+            font-size: 22px
+            font-weight: normal
+    .flex-servicos
+        display: flex
+        flex-wrap: wrap
+    .box-servico
+        border: 10px solid rgb(230, 230, 230)
+        border-radius: 3px
+        background-color: #ffffff
+        box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5)
+        background: white
+        width: 33.3%
+        img
+            width: 100%
+        .box-servico-wraper
+            padding: 20px
+            h2
+                color: $color1
+                font-size: 20px
+                font-weight: normal
+            p
+                margin: 8px 0
+                line-height: 1.6
+                font-weight: lighter
+                color: $colorparagrafo
+                font-size: 15px
+            a
+                display: inline-block
+                border: 1px solid $colorparagrafo
+                color: $colorparagrafo
+                text-decoration: none
+                padding: 6px 12px 
+                border-radius: 20px
 
 @media screen and ( max-width: 1024px )
         nav.desktop
@@ -206,3 +253,9 @@ section.descricao-danki3
             float: none
             margin-top: 10px
             max-width: 500px
+    
+    section.servicos
+        .box-servico
+            margin: 0 auto
+            max-width: 400px
+            width: 100%
