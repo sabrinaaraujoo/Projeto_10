@@ -298,6 +298,45 @@ section.formulario
         background-color: #ff5f27
         box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5)
 
+footer
+    margin: 50px 0
+
+    .box-footer
+        float: left
+        width: 33.3%
+        padding: 0 15px
+        h2
+            color: $color1
+            font-size: 22px
+            font-weight: normal
+        p
+            margin-top: 10px
+            color: $color1
+            font-weight: 300
+            font-size: 15px
+        form
+            margin-top: 10px
+            button
+                width: calc(20% - 10px)
+                margin-left: 10px
+                max-width: 63px
+                height: 43px
+                border: 1px solid 
+                border-radius: 50px
+                background: white
+                color: $color1
+            input[type=email]
+                width: 80%
+                max-width: 208px
+                height: 43px
+                padding-left: 10px
+                border-radius: 100px
+                background-color: #ffffff
+                border: 1px solid #bfbfbf
+                &:focus
+                    outline: 0
+    
+
 @media screen and ( max-width: 1024px )
         nav.desktop
             display: none
@@ -348,3 +387,9 @@ section.formulario
                 margin: 15px auto
                 max-width: 640px
                 border: 1px solid #ececec
+    
+    footer
+        .box-footer
+            width: 100%
+            margin-bottom: 20px
+            text-align: center 

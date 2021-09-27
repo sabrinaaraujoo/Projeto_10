@@ -280,6 +280,43 @@ section.formulario {
     background-color: #ff5f27;
     box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5); }
 
+footer {
+  margin: 50px 0; }
+  footer .box-footer {
+    float: left;
+    width: 33.3%;
+    padding: 0 15px; }
+    footer .box-footer h2 {
+      color: #31475e;
+      font-size: 22px;
+      font-weight: normal; }
+    footer .box-footer p {
+      margin-top: 10px;
+      color: #31475e;
+      font-weight: 300;
+      font-size: 15px; }
+    footer .box-footer form {
+      margin-top: 10px; }
+      footer .box-footer form button {
+        width: calc(20% - 10px);
+        margin-left: 10px;
+        max-width: 63px;
+        height: 43px;
+        border: 1px solid;
+        border-radius: 50px;
+        background: white;
+        color: #31475e; }
+      footer .box-footer form input[type=email] {
+        width: 80%;
+        max-width: 208px;
+        height: 43px;
+        padding-left: 10px;
+        border-radius: 100px;
+        background-color: #ffffff;
+        border: 1px solid #bfbfbf; }
+        footer .box-footer form input[type=email]:focus {
+          outline: 0; }
+
 @media screen and (max-width: 1024px) {
   nav.desktop {
     display: none; }
@@ -323,6 +360,11 @@ section.formulario {
     width: 100%;
     margin: 15px auto;
     max-width: 640px;
-    border: 1px solid #ececec; } }
+    border: 1px solid #ececec; }
+
+  footer .box-footer {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
