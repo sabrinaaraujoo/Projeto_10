@@ -5,8 +5,7 @@
   font-family: "Roboto", sans-serif; }
 
 body {
-  overflow-x: hidden;
-  background-color: #e6e6e6; }
+  overflow-x: hidden; }
 
 .container {
   max-width: 1280px;
@@ -154,8 +153,8 @@ section.descricao-danki3 {
   section.descricao-danki3 .box-depoimento {
     position: absolute;
     left: 50%;
-    bottom: -30px;
-    width: 60%;
+    bottom: -20px;
+    width: 70%;
     max-width: 506px;
     background: white;
     padding: 10px 30px;
@@ -179,10 +178,10 @@ section.servicos {
     display: flex;
     flex-wrap: wrap; }
   section.servicos .box-servico {
-    border: 10px solid #e6e6e6;
+    border: 10px solid white;
     border-radius: 3px;
     background-color: #ffffff;
-    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.3);
     background: white;
     width: 33.3%; }
     section.servicos .box-servico img {
@@ -206,6 +205,33 @@ section.servicos {
         text-decoration: none;
         padding: 6px 12px;
         border-radius: 20px; }
+
+section.portifolio {
+  padding: 20px 0;
+  background: white; }
+  section.portifolio .container {
+    max-width: 960px;
+    padding: 15px 0;
+    background-color: #f7f7f7; }
+  section.portifolio h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #31475e; }
+  section.portifolio .empresas {
+    padding: 0 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; }
+    section.portifolio .empresas .empresas-single {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-style: solid;
+      border-color: #ececec;
+      border-width: 1px 0 1px 1px;
+      width: 25%;
+      padding: 10px 0;
+      border: 1px solid #ececec; }
 
 @media screen and (max-width: 1024px) {
   nav.desktop {
@@ -244,6 +270,12 @@ section.servicos {
   section.servicos .box-servico {
     margin: 0 auto;
     max-width: 400px;
-    width: 100%; } }
+    width: 100%; }
+
+  section.portifolio .empresas .empresas-single {
+    width: 100%;
+    margin: 15px auto;
+    max-width: 640px;
+    border: 1px solid #ececec; } }
 
 /*# sourceMappingURL=style.css.map */
